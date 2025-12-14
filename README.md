@@ -14,9 +14,25 @@ pip install -r requirements.txt
 
 ## TEST
 
-1. First run fastapi server using uvicorn main:app --reload
-2. We will use multiple terminals as clients to connect to the server
-3. In each terminal command 'python client_example.py'
-4. In each terminal we will be prompted with "username" and "topic".
-   One can choose to keep it empty then default username as 'alice' and topic 'sports' will be used as initial payload
-5. Using '/list' we will get all the active topics
+1.  Start the FastAPI WebSocket server by running:
+
+    uvicorn main:app --reload
+
+2.  Open multiple terminal windows to simulate multiple clients.
+    In each terminal, run the client using:
+
+    python client_example.py
+
+3.  Each client will be prompted to enter a username and a topic.
+    If left empty, the default values will be used:
+
+    Username: alice
+    Topic: sports
+
+4.  Clients connected to the same topic can exchange messages in real time.
+
+5.  To view all active topics and their user counts, type:
+
+    /list
+
+    The list will be returned only to the requesting client.
