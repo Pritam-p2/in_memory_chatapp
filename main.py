@@ -47,9 +47,9 @@ async def websocket_endpoint(websocket: WebSocket):
             await websocket.close()
             return
         
-        if username is '':
+        if username == '':
             username = 'alice'
-        if topic is '':
+        if topic == '':
             topic = 'sports'
 
         #logging.info("%s joined topic %s", username, topic)
