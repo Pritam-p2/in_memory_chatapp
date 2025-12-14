@@ -7,8 +7,8 @@ remove messages after a set time period.
 ## RUN
 
 ```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/Pritam-p2/in_memory_chatapp.git
+cd in_memory_chatapp
 pip install -r requirements.txt
 ```
 
