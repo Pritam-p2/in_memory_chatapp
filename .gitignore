@@ -1,0 +1,39 @@
+# --------------------
+# Virtual Environments
+# --------------------
+env/
+
+
+# --------------------
+# Python cache files
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+
+# --------------------
+# Environment variables
+# --------------------
+.env
+
+# --------------------
+# OS generated files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# IDE / Editor
+# --------------------
+.vscode/
+.idea/
+*.swp
+
+
+
+# --------------------
+# FastAPI / Uvicorn
+# --------------------
+uvicorn.log
